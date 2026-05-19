@@ -59,7 +59,7 @@
   margin-left: auto;
 }
 
-.todo__delete-btn {
+.todo__delete-btn:hover {
   border: none;
   padding: 0;
   background-color: transparent;
@@ -68,6 +68,7 @@
   font-weight: 500;
   color: #f44;
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .todo__delete-btn::before {
