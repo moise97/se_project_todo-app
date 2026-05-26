@@ -15,4 +15,4 @@ Give a description of the technologies and techniques used. Pictures, GIFs, or s
 This project is deployed on GitHub Pages:
 
 - ADD LINK HERE
-  https://github.com/moise97/se_project_todo-app
+  https://moise97.github.io/se_project_todo-app/
