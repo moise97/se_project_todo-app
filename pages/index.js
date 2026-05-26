@@ -39,7 +39,7 @@ const addTodoPopup = new PopupWithForm(".popup", (formData) => {
   const todo = generateTodo({
     name: formData.name,
     date,
-    isDone: false,
+    completed: false,
     id: uuidv4(),
   });
   todoSection.addItem(todo);
