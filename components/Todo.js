@@ -1,7 +1,9 @@
 // components/Todo.js
 
 export class Todo {
-  constructor(data, selector) {
+  constructor(data, selector, { handleDelete, handleToggle }) {
+    this._handleDelete = handleDelete;
+    this._handleToggle = handleToggle;
     this._name = data.name;
     this._completed = data.completed;
     this._date = data.date;
@@ -20,11 +22,13 @@ export class Todo {
 
   _setEventListeners() {
     this._deleteBtn.addEventListener("click", () => {
+      this._handleDelete(this._completed);
       this._todoElement.remove();
     });
 
     this._checkbox.addEventListener("change", () => {
       this._completed = !this._completed;
+      this._handleToggle(this._completed);
     });
   }
 
