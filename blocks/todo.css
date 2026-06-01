@@ -59,7 +59,7 @@
   margin-left: auto;
 }
 
-.todo__delete-btn:hover {
+.todo__delete-btn {
   border: none;
   padding: 0;
   background-color: transparent;
